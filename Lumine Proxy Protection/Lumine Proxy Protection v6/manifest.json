@@ -1,0 +1,45 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": [
+            "MineHint"
+        ]
+    },
+    "header": {
+        "name": "Lumine Proxy Protection v6",
+        "description": "Developed by MineHint\nhttps://post.minehint.com/lpp",
+        "uuid": "31626425-668a-4278-9fe3-2c7a98201dd2",
+        "version": [
+            0,
+            0,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            50
+        ]
+    },
+    "modules": [
+        {
+            "type": "script",
+            "uuid": "8f01c64e-5737-4c2e-8e21-80a6abc85bab",
+            "entry": "scripts/main.js",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "beta"
+        },
+        {
+            "module_name": "@minecraft/server-admin",
+            "version": "beta"
+        }
+    ]
+}
