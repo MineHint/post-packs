@@ -1,0 +1,8 @@
+lpp.log.default=§cLumine Proxy connection denied: §e%s
+lpp.log.ghost=§cLumine Proxy Ghost connection denied: §e%s
+lpp.log.forceop=§cLumine Proxy force op request denied: §e%s
+lpp.log.bot=§cLumine Proxy Bot connection denied: §e%s
+lpp.log.chat_spam=§cLumine Proxy Chat Abuse detected: §e%s
+lpp.loaded.message=§aLumine Proxy Protection v8 is now active.
+lpp.loaded.token.verify=§aYour server token for verify is §e%s\n§cDo not share this token.
+lpp.loaded.token.banish=§aYour server token for banish is §e%s\n§cDo not share this token.

@@ -1,0 +1,8 @@
+lpp.log.default=§c루마인 프록시 접속 거부됨: §e%s
+lpp.log.ghost=§c루마인 프록시 고스트 접속 거부됨: §e%s
+lpp.log.forceop=§c루마인 프록시 강제 오피 요청 거부됨: §e%s
+lpp.log.bot=§c루마인 프록시 봇 접속 거부됨: §e%s
+lpp.log.chat_spam=§c루마인 프록시 채팅 스팸 감지됨: §e%s
+lpp.loaded.message=§a루마인 프록시 방지팩 V8이 활성화 되었습니다.
+lpp.loaded.token.verify=§a해당 서버 확인용 토큰은 §e%s 입니다.\n§c해당 토큰을 타인에게 공유하지 마세요..
+lpp.loaded.token.banish=§a해당 서버 추방용 토큰은 §e%s 입니다.\n§c해당 토큰을 타인에게 공유하지 마세요.
