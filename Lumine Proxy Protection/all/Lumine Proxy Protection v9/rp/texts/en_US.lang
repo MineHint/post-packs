@@ -1,0 +1,12 @@
+lpp.log.bot_threatlock=§vAdvertisement bot detected: %s. §cPlayer join has been disabled. §vIt will automatically be enabled after %s seconds or when the next player joins.
+lpp.log.bot=§cAdvertisement Bot detected: %s
+lpp.log.chat_spam=§cChat spamming detected: %s
+lpp.log.player_join_enabled=§aPlayer join has been enabled
+lpp.command.disallowjoin.description=§sControls player connection access.
+lpp.command.threatlock.description=§sAutomatically locks the server for a set duration when a suspicious player attempts to join.
+lpp.command.threatlock_duration.description=§sSets the duration for which player join is disabled after a suspicious player is detected.
+lpp.command.disallowjoin.changed=§hPlayer join has been %s.
+lpp.command.threatlock.changed=§iThreat auto-lock has been %s.
+lpp.command.threatlock_duration.changed=§iThreat auto-lock duration has been set to %s seconds.
+lpp.common.enabled=enabled
+lpp.common.disabled=disabled

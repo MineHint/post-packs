@@ -1,0 +1,12 @@
+lpp.log.bot_threatlock=§v광고봇이 탐지되었습니다: %s. §c플레이어 접속이 비활성화되었습니다. §v%s초 후 또는 다음 접속자 이후에 자동으로 활성화됩니다.
+lpp.log.bot=§c광고봇이 탐지되었습니다: %s
+lpp.log.chat_spam=§c채팅 스팸이 탐지되었습니다: %s
+lpp.log.player_join_enabled=§a플레이어 접속이 활성화되었습니다
+lpp.command.disallowjoin.description=§s플레이어 접속을 제어합니다.
+lpp.command.threatlock.description=§s의심스러운 플레이어가 접속을 시도할 때 자동으로 일정 시간 동안 서버를 잠급니다.
+lpp.command.threatlock_duration.description=§s의심스러운 플레이어가 탐지된 후 플레이어 접속이 비활성화되는 시간을 설정합니다.
+lpp.command.disallowjoin.changed=§h플레이어 접속이 %s 상태로 변경되었습니다.
+lpp.command.threatlock.changed=§i위협 자동 차단 기능이 %s 상태로 변경되었습니다.
+lpp.command.threatlock_duration.changed=§i위협 자동 차단 시간이 %s초로 설정되었습니다.
+lpp.common.enabled=활성화
+lpp.common.disabled=비활성화
