@@ -1,0 +1,62 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": [
+            "MineHint"
+        ]
+    },
+    "header": {
+        "name": "Lumine Proxy Protection v10 Behavior Pack",
+        "description": "Developed by MineHint",
+        "uuid": "923f0c9d-fc63-4636-aa51-fc3a8d3a1ad9",
+        "version": [
+            0,
+            0,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            50
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "604f5302-6a4c-4fc2-838d-0e79b24727f2",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        },
+        {
+            "type": "script",
+            "uuid": "1bc94d08-23ee-4708-9f0e-c8cdb4811714",
+            "entry": "scripts/main.js",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "bbf7e97c-91bd-406e-a5a7-530101a5435b",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        },
+        {
+            "module_name": "@minecraft/server",
+            "version": "beta"
+        },
+        {
+            "module_name": "@minecraft/server-admin",
+            "version": "beta"
+        }
+    ]
+}
