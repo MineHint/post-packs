@@ -1,0 +1,45 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": [
+            "MineHint",
+            "Lukky7XD"
+        ]
+    },
+    "header": {
+        "name": "Lumine Proxy Protection v11 Resource Pack",
+        "description": "Developed by MineHint",
+        "uuid": "ddda0665-b6eb-4f66-96c1-974c9108a8cb",
+        "version": [
+            0,
+            0,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            50
+        ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "9246c7c4-af10-4b85-9604-2c04cdca1db8",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "b3d338bb-578d-43eb-9921-1206e8bc1cb1",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}
