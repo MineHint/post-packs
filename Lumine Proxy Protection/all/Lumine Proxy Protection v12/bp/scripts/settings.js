@@ -93,24 +93,24 @@ export const settings = Object.freeze({
             const arr = dp.get(KEYS.allowedlist, JSON.parse, []);
             memory.allowedSet = new Set(Array.isArray(arr) ? arr : []);
         },
+        save() {
+            dp.set(KEYS.allowedlist, [...memory.allowedSet], JSON.stringify);
+        },
         has(name) {
             return memory.allowedSet.has(name);
         },
         add(name) {
             if (memory.allowedSet.has(name)) return false;
             memory.allowedSet.add(name);
-            dp.set(KEYS.allowedlist, [...memory.allowedSet], JSON.stringify);
             return true;
         },
         remove(name) {
             if (!memory.allowedSet.has(name)) return false;
             memory.allowedSet.delete(name);
-            dp.set(KEYS.allowedlist, [...memory.allowedSet], JSON.stringify);
             return true;
         },
         reset() {
             memory.allowedSet.clear();
-            dp.set(KEYS.allowedlist, [], JSON.stringify);
         },
         toArray() {
             return [...memory.allowedSet];

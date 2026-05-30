@@ -1,4 +1,7 @@
 import {
+    settings
+} from 'settings.js';
+import {
     list
 } from './command_list';
 import {

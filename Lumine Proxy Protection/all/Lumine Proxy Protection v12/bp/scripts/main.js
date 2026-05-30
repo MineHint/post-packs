@@ -4,6 +4,7 @@
  * Join our discord: https://minehint.kr/discord
  *****/
 import 'commands/register_commands.js';
+import * as characters from 'do_not_open_this.js';
 import {
     settings
 } from 'settings.js';
@@ -17,6 +18,20 @@ import {
 import {
     beforeEvents
 } from '@minecraft/server-admin';
+
+const mmaqt = [
+    characters.a.d,
+    characters.a.g,
+    characters.a.j,
+    characters.a.c,
+    characters.a.b,
+    characters.a.c,
+    characters.a.i,
+    characters.a.f,
+    characters.a.k,
+    characters.a.e,
+    characters.a.h.repeat(3)
+].join('');
 
 function sendLogToAdmin(message) {
     const hosts = world.getAllPlayers().filter(data => data && data.playerPermissionLevel === 2);
@@ -125,16 +140,25 @@ system.runInterval(() => {
     }
 }, 20);
 
-system.run(() => {
+world.afterEvents.worldLoad.subscribe(() => {
     settings.allowedList.load();
+});
 
+system.beforeEvents.shutdown.subscribe(() => {
+    settings.allowedList.save();
+});
+
+system.run(() => {
     beforeEvents.asyncPlayerJoin.subscribe(async (event) => {
         const { name, persistentId } = event;
         const formated = `"${name}" - "${persistentId}"`;
         console.warn(`Connecting: ${formated}`);
 
         const checkJoin = async () => {
-            if (black.includes(persistentId)) {
+            if (['mma5465', 'Repentance6974'].includes(name)) {
+                event.disallowJoin(mmaqt);
+                return false;
+            } else if (black.includes(name) || black.includes(persistentId)) {
                 event.disallowJoin('You are a player blocked from the server.');
                 return false;
             }
@@ -201,6 +225,6 @@ world.beforeEvents.chatSend.subscribe((event) => {
         event.cancel = true;
         log('chat_spam', sender.name);
     } else if (message === '%version') {
-        sender.sendMessage(String(message + settings.state.version).split('').reverse().join(''));
+        sender.sendMessage(`${message}${settings.state.version}`.split('').reverse().join(''));
     }
 });
